@@ -1227,7 +1227,7 @@ def load_models():
     
     # Violence model
     violence_model = ViolenceAgent()
-    model_path = r"C:\Users\shiva\OneDrive\Desktop\cv_project_env\models\violence_agent_best.pth"
+    model_path = "models/violence_agent_best.pth"
     violence_model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
     violence_model = violence_model.to(device)
     violence_model.eval()
