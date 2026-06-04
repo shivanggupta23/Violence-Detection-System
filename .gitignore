@@ -1,0 +1,39 @@
+# Datasets
+accident_dataset/
+data/
+
+# Embeddings
+embeddings/
+text_embeddings/
+accident_embeddings/
+severity_embeddings/
+
+# Generated features
+combined_features/
+accident_combined_features/
+severity_combined_features/
+
+# Frames
+accident_frames/
+severity_frames/
+
+# Results
+results/
+accident_results/
+severity_results/
+
+# Model checkpoints
+checkpoints/
+
+# Large model files
+*.pth
+*.pt
+*.npy
+*.npz
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
