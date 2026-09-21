@@ -1187,6 +1187,21 @@ import tempfile
 import os
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODELS_DIR = os.path.join(BASE_DIR, "models")
+
+print("BASE_DIR:", BASE_DIR)
+print("MODELS_DIR:", MODELS_DIR)
+
+violence_path = os.path.join(
+    MODELS_DIR,
+    "violence_agent_best.pth"
+)
+
+print("Violence model:", violence_path)
+print("Exists:", os.path.exists(violence_path))
 
 st.set_page_config(
     page_title="Violence Detection System",
